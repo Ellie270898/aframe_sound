@@ -1,16 +1,16 @@
  <!DOCTYPE html>
 <html>
 <head>
-  <title>Hello VR</title>
+  <title>Scary VR</title>
   <script src="aframe-v0.7.1.js"></script>
   <script src="aframe-animation-component.js"></script>
 </head>
 <body>
 <a-scene>
   <a-assets>
-    <audio id="Happy Halloween" src="1Happy Halloween.mp3"></audio>
     <audio id="gr8again" src="gr8again.mp3"></audio>
     <audio id="wall" src="wall.mp3"></audio>
+    <audio id="anthem" src="nationalanthem.mp3"></audio>
     <image id="wood" src="old wooden floor.jpg"></image>
     <image id="trump" src="trump2.png"></image>
     <image id="door" src="door.png"></image>
@@ -21,7 +21,7 @@
   <a-cylinder sound="src: #gr8again; autoplay: true; loop: true"  position="15 0.75 1" color="#FFC65D" radius="0.5" height="1.5"></a-cylinder>
   <a-plane width="20" height="300" rotation="-90 0 0" src="#wood"></a-plane>
   <a-plane width="22" height="100" rotation="90 0 0" position="0 20 1" color="#FFFFCC"></a-plane>
-  <a-plane width="22" height="25" rotation="0 0 0" position="0 10 1" src="#door"></a-plane>
+  <a-plane sound="src: #anthem; autoplay: true; loop: true"  width="22" height="25" rotation="0 0 0" position="0 10 1" src="#door"></a-plane>
   <a-plane width="300" height="100" rotation="0 -90 0" position="10 0 1" color="#FFFFCC"></a-plane>
   <a-plane width="300" height="100" rotation="0 90 0" position="-10 0 1" color="#FFFFCC"></a-plane>
   <a-sky color="#030303"></a-sky>
