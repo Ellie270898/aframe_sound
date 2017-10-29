@@ -13,19 +13,22 @@
     <audio id="Piano" src="2Piano.mp3"></audio>
     <image id="wood" src="old wooden floor.jpg"></image>
     <image id="trump" src="trump2.png"></image>
+    <image id="door" src="door.png"></image>
   </a-assets>
-  <a-sphere position="0 20 -120" radius="20" src="#trump"></a-sphere>
+  <a-sphere   animation__yoyo="property: position; dir: alternate; dur: 1000;
+                     easing: easeInSine; loop: true; to: 0 2 0"
+                     sound= position="0 20 -200" radius="20" src="#trump"></a-sphere>
   <a-box position="-15 0.75 1" color="#4CC3D9" width="1" height="1"  depth="1"></a-box>
   <a-cylinder position="15 0.75 1" color="#FFC65D" radius="0.5" height="1.5"></a-cylinder>
   <a-plane width="10" height="300" rotation="-90 0 0" src="#wood"></a-plane>
   <a-plane width="10" height="300" rotation="90 0 0" position="0 15 1" color="#FFFFCC"></a-plane>
+  <a-plane width="10" height="12" rotation="0 0 90" position="0 0 1" src="#door"></a-plane>
   <a-plane width="300" height="100" rotation="0 -90 0" position="14 0 1" color="#FFFFCC"></a-plane>
   <a-plane width="300" height="100" rotation="0 90 0" position="-14 0 1" color="#FFFFCC"></a-plane>
   <a-sky color="#030303"></a-sky>
   <a-entity position="0 3 120">
     <a-entity cursor position="0 0 -5"></a-entity>
-<a-entity id="trump" geometry="primitive: sphere" material="src: trump2.png"
-          sound="src:"Happy halloween"; on: click"></a-entity>
+<a-entity sound="src:"Happy halloween"; on: click"></a-entity>
     <a-camera></a-camera>
   </a-entity>
 </a-scene>
