@@ -15,9 +15,8 @@
     <image id="trump" src="trump2.png"></image>
     <image id="door" src="door.png"></image>
   </a-assets>
-  <a-sphere   animation__yoyo="property: position; dir: alternate; dur: 1000;
-                     easing: easeInSine; loop: true; to: 0 2 0"
-                     sound= position="0 20 -200" radius="20" src="#trump"></a-sphere>
+  <a-sphere position="0 20 -200" radius="20" src="#trump" animation__yoyo="property: position; dir: alternate; dur: 1000;
+  easing: easeInSine; loop: true; to: 0 -20 -200" ></a-sphere>
   <a-box position="-15 0.75 1" color="#4CC3D9" width="1" height="1"  depth="1"></a-box>
   <a-cylinder position="15 0.75 1" color="#FFC65D" radius="0.5" height="1.5"></a-cylinder>
   <a-plane width="10" height="300" rotation="-90 0 0" src="#wood"></a-plane>
